@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-REPO="https://github.com/LoopXS/Ultroid.git"
+REPO="https://github.com/LoopXS/Megan.git"
 DIR="/root/LoopXS"
 
 spinner(){
