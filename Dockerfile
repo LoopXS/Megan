@@ -13,6 +13,10 @@ COPY installer.sh .
 
 RUN bash installer.sh
 
+RUN git clone https://github.com/LoopXS/Megan.git /root/LoopXS/ \
+    && pip3 install --no-cache-dir -r root/LoopXS/requirements.txt \
+    && pip3 uninstall av -y && pip3 install av --no-binary av
+
 # changing workdir
 WORKDIR "/root/LoopXS"
 
