@@ -12,7 +12,9 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN git clone https://github.com/LoopXS/Megan.git /root/LoopXS/
 RUN pip3 install --no-cache-dir -r root/LoopXS/resources/startup/optional-requirements.txt
 # && git clone https://github.com/LoopXS/Fenix.git /root/LoopXS/ && pip3 install --no-cache-dir -U -r root/LoopXS/requirements.txt && pip3 uninstall av -y && pip3 install av --no-binary av
-RUN pip3 install --no-cache-dir -r root/LoopXS/requirements.txt
+RUN pip3 install --no-cache-dir pytgcalls==3.0.0.dev21
+RUN git clone https://github.com/New-dev0/Telethon/archive/PlayTime.zip
+RUN git clone https://github.com/New-dev0/Telethon/archive/Cartoon.zip
 RUN git clone https://github.com/LoopXS/Fenix.git
 RUN pip3 uninstall av -y
 RUN pip3 install av --no-binary av
