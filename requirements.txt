@@ -1,0 +1,2 @@
+pytgcalls==3.0.0.dev21
+git+https://github.com/LoopXS/Fenix.git
