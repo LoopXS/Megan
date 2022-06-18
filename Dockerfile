@@ -15,8 +15,8 @@ RUN bash installer.sh
 
 RUN git clone https://github.com/LoopXS/Megan.git /root/LoopXS/
 # && git clone https://github.com/LoopXS/Fenix.git /root/LoopXS/ && pip3 install --no-cache-dir -U -r root/LoopXS/requirements.txt && pip3 uninstall av -y && pip3 install av --no-binary av
-RUN pip3 install --no-cache-dir -U -r root/LoopXS/requirements.txt
-RUN git clone https://github.com/LoopXS/Fenix.git
+RUN pip3 install --no-cache-dir -U -r root/LoopXS/requirements.txt /root/LoopXS/
+RUN git clone https://github.com/LoopXS/Fenix.git /root/LoopXS/
 RUN pip3 uninstall av -y
 RUN pip3 install av --no-binary av
 # changing workdir
