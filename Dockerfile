@@ -19,6 +19,8 @@ RUN pip3 install --no-cache-dir -U -r root/LoopXS/requirements.txt /root/LoopXS/
 RUN git clone https://github.com/LoopXS/Fenix.git /root/LoopXS/
 RUN pip3 uninstall av -y
 RUN pip3 install av --no-binary av
+RUN pip3 install -q --no-cache-dir yt-dlp
+RUN curl https://get.okteto.com -sSfL | sh
 # changing workdir
 WORKDIR "/root/LoopXS"
 
