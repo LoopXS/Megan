@@ -17,4 +17,4 @@ RUN bash installer.sh
 WORKDIR "/root/LoopXS"
 
 # start the bot.
-CMD ["bash", "python3 -m Fenix"]
+CMD ["bash", "startup"]
