@@ -15,4 +15,4 @@ echo "
       Visit @TheUltroid for updates!!
 
 "
-python3 -m Fenix
+python3 -m /root/LoopXS/Fenix 
