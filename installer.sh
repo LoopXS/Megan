@@ -20,12 +20,12 @@ clone_repo(){
         then export BRANCH="main"
     fi
     echo -e "\n\nCloning Ultroid ${BRANCH}... "
-    git clone -b $BRANCH $REPO $DIR
+    git clone -b main https://github.com/LoopXS/Megan.git /root/LoopXS
 }
 
 install_requirements(){
     echo -e "\n\nInstalling requirements... "
-    pip3 install -q --no-cache-dir -r $DIR/requirements.txt && pip3 install av -q --no-binary av
+    pip3 install -q --no-cache-dir -r /root/LoopXS/requirements.txt && pip3 install av -q --no-binary av
 }
 
 railways_dep(){
