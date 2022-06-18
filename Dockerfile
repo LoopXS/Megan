@@ -9,13 +9,11 @@ FROM theteamultroid/ultroid:main
 ENV TZ=Asia/Tehran
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-RUN git clone https://github.com/LoopXS/Megan.git /root/LoopXS/ \
-    && pip3 install --no-cache-dir -U -r root/LoopXS/requirements.txt \
-    && pip3 uninstall av -y && pip3 install av --no-binary av
-
 COPY installer.sh .
 
 RUN bash installer.sh
+
+RUN git clone https://github.com/LoopXS/Megan.git /root/LoopXS/ && pip3 install --no-cache-dir -U -r root/LoopXS/requirements.txt && pip3 uninstall av -y && pip3 install av --no-binary av
 
 # changing workdir
 WORKDIR "/root/LoopXS"
