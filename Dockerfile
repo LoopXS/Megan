@@ -14,7 +14,7 @@ RUN pip3 install --no-cache-dir -r root/LoopXS/resources/startup/optional-requir
 # && git clone https://github.com/LoopXS/Fenix.git /root/LoopXS/ && pip3 install --no-cache-dir -U -r root/LoopXS/requirements.txt && pip3 uninstall av -y && pip3 install av --no-binary av
 # RUN pip3 install --no-cache-dir pytgcalls==3.0.0.dev21
 # RUN pip3 install --no-cache-dir https://github.com/LoopXS/Fenix.git
-RUN pip3 install --no-cache-dir -r root/LoopXS/requirements.txt
+RUN pip3 install --no-cache-dir -r /root/LoopXS/requirements.txt
 RUN pip3 uninstall av -y
 RUN pip3 install av --no-binary av
 RUN pip3 install -q --no-cache-dir yt-dlp
